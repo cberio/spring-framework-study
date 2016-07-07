@@ -21,8 +21,8 @@
     <bean id="localDataSource" class="org.apache.commons.dbcp.BasicDataSource">
         <property name="driverClassName" value="${jdbc.local.driverClass}"/>
         <property name="url" value="${jdbc.local.url}"/>
-        <property name="username" value="${jdbc.local.username"/>
-        <property name="password" value="${jdbc.local.password"/>
+        <property name="username" value="${jdbc.local.username}"/>
+        <property name="password" value="${jdbc.local.password}"/>
     </bean>
 
     <!-- transaction manager, use JtaTransactionManager for global tx -->

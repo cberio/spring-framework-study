@@ -18,7 +18,43 @@
 	</div>
   </div>
 </nav>
- 
+
+<div class="container">
+
+	<div class="row">
+		<div class="col-md-4">
+			<h2>Heading</h2>
+			<p>ABC</p>
+			<p>
+				<a class="btn btn-default" href="#" role="button">View details</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h2>Heading</h2>
+			<p>ABC</p>
+			<p>
+				<a class="btn btn-default" href="#" role="button">View details</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h2>Heading</h2>
+			<p>ABC</p>
+			<p>
+				<a class="btn btn-default" href="#" role="button">View details</a>
+			</p>
+		</div>
+	</div>
+
+
+	<hr>
+	<footer>
+		<p>&copy; Mkyong.com 2015</p>
+		<c:forEach var="user" items="${userList}">
+			<p><c:out value="${user.name}"/></p>
+		</c:forEach>
+	</footer>
+</div>
+
 <div class="jumbotron">
   <div class="container">
 	<h1>${title}</h1>
@@ -26,7 +62,7 @@
 		<c:if test="${not empty name}">
 			Hello ${name}
 		</c:if>
- 
+
 		<c:if test="${empty name}">
 			Welcome Welcome!
 		</c:if>
@@ -36,40 +72,7 @@
 	</p>
 	</div>
 </div>
- 
-<div class="container">
- 
-  <div class="row">
-	<div class="col-md-4">
-		<h2>Heading</h2>
-		<p>ABC</p>
-		<p>
-			<a class="btn btn-default" href="#" role="button">View details</a>
-		</p>
-	</div>
-	<div class="col-md-4">
-		<h2>Heading</h2>
-		<p>ABC</p>
-		<p>
-			<a class="btn btn-default" href="#" role="button">View details</a>
-		</p>
-	</div>
-	<div class="col-md-4">
-		<h2>Heading</h2>
-		<p>ABC</p>
-		<p>
-			<a class="btn btn-default" href="#" role="button">View details</a>
-		</p>
-	</div>
-  </div>
- 
- 
-  <hr>
-  <footer>
-	<p>&copy; Mkyong.com 2015</p>
-  </footer>
-</div>
- 
+
 <spring:url value="/resources/core/css/hello.js" var="coreJs" />
 <spring:url value="/resources/core/css/bootstrap.min.js" var="bootstrapJs" />
  
